@@ -1,0 +1,19 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $phone = $_POST['phone'];
+    $message = $_POST['message'];
+
+    // Mail processing example
+    $to = "leonardnjoroge388@gmail.com";
+    $subject = "New Contact Form Submission";
+    $body = "Name: $name\nEmail: $email\nPhone: $phone\nMessage:\n$message";
+
+    if (mail($to, $subject, $body)) {
+        echo "<script>alert('Thank you! Your message has been sent.');</script>";
+    } else {
+        echo "<script>alert('Oops! Something went wrong. Please try again later.');</script>";
+    }
+}
+?>
