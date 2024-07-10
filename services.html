@@ -4,97 +4,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services - Legacy Elegance</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Additional CSS can be added here */
         body {
-            font-family: Arial, sans-serif; /* Improved readability */
+            font-family: Arial, sans-serif; 
             line-height: 1.6;
         }
         .logo img {
-            max-width: 50%; /* Ensures the logo image is responsive */
-            height: 50%;
-        }
-        .services {
-            margin: 20px; /* Add some spacing around services */
-        }
-        .service {
-            margin-bottom: 20px; /* Space between service sections */
-            padding: 10px;
-            border: 1px solid #ccc; /* Clearly define service sections */
-            border-radius: 5px;
-        }
-        .service h3 {
-            margin-top: 0; /* Remove default margin */
+            max-width: 100px; 
+            width: 50%;
+            height: auto;
         }
         .service img {
-            width: 100%; /* Adjust the width to 100% of the container */
-            height: 200px; /* Set a fixed height */
-            object-fit: cover; /* Ensure the image covers the area while maintaining aspect ratio */
-            border-radius: 5px; /* Optional: Add rounded corners to images */
+            width: 100%; 
+            height: 200px; 
+            object-fit: cover; 
+            border-radius: 5px; 
+        }
+        .service {
+            text-align: center;
+            border: 1px solid #ccc; 
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="logo">Legacy Elegance</div>
-        <img src="https://raw.githubusercontent.com/Abdu-EEPR/legacy-elegance3/main/LE_3.png" alt="Legacy Elegance Logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="testimonials.html">Testimonials</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="https://raw.githubusercontent.com/Abdu-EEPR/legacy-elegance3/main/LE_3.png" alt="Legacy Elegance Logo" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
-    <main>
+    <main class="container mt-5">
         <section class="services">
             <h2>Our Services</h2>
-            <div class="service">
-                <h3>Residential Cleaning</h3>
-                <img src="https://raw.githubusercontent.com/Abdu-EEPR/legacy-elegance3/main/Resdential_1.jpg" alt="Residential Cleaning">
-                <p>Meticulous attention to detail for a pristine home environment.</p>
-            </div>
-            <div class="service">
-                <h3>Commercial Property Cleaning</h3>
-                <img src="https://raw.githubusercontent.com/Abdu-EEPR/legacy-elegance3/main/Commerical.jpg" alt="Commercial Property Cleaning">
-                <p>Professional cleaning for businesses to maintain a spotless and professional appearance.</p>
-            </div>
-            <div class="service">
-                <h3>Office Cleaning</h3>
-                <img src="https://raw.githubusercontent.com/Abdu-EEPR/legacy-elegance3/main/Office.jpg" alt="Office Cleaning">
-                <p>Regular and thorough cleaning services to promote a clean and productive workspace.</p>
-            </div>
-            <div class="service">
-                <h3>Fumigation Services</h3>
-                <img src="https://raw.githubusercontent.com/Abdu-EEPR/legacy-elegance3/main/Fug.jpg" alt="Fumigation Services">
-                <p>Effective pest control solutions to ensure a healthy living and working environment.</p>
-            </div>
-            <div class="service">
-                <h3>Fragrance Enhancements</h3>
-                <p>We also enhance your spaces with the best fragrances, bringing style and a fresh atmosphere to your living room and other areas. Experience the blend of cleanliness and elegance with Legacy Elegance.</p>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service">
+                        <h3>Residential Cleaning</h3>
+                        <img src="https://raw.githubusercontent.com/Abdu-EEPR/legacy-elegance3/main/Resdential_1.jpg" alt="Residential Cleaning">
+                        <p>Meticulous attention to detail for a pristine home environment.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service">
+                        <h3>Commercial Property Cleaning</h3>
+                        <img src="https://raw.githubusercontent.com/Abdu-EEPR/legacy-elegance3/main/Commerical.jpg" alt="Commercial Property Cleaning">
+                        <p>Professional cleaning for businesses to maintain a spotless and professional appearance.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service">
+                        <h3>Office Cleaning</h3>
+                        <img src="https://raw.githubusercontent.com/Abdu-EEPR/legacy-elegance3/main/Office.jpg" alt="Office Cleaning">
+                        <p>Regular and thorough cleaning services to promote a clean and productive workspace.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service">
+                        <h3>Fumigation Services</h3>
+                        <img src="https://raw.githubusercontent.com/Abdu-EEPR/legacy-elegance3/main/Fug.jpg" alt="Fumigation Services">
+                        <p>Effective pest control solutions to ensure a healthy living and working environment.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service">
+                        <h3>Fragrance Enhancements</h3>
+                        <p>We also enhance your spaces with the best fragrances, bringing style and a fresh atmosphere to your living room and other areas. Experience the blend of cleanliness and elegance with Legacy Elegance.</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
-    <footer>
-        <div class="contact-info">
-            <p>Address: 217 Macaulay Street East, L8L 3X7 Hamilton, ON</p>
-            <p>Phone: +1 437-259-0222, +1 437-333-4699, +1 437-663-9240</p>
-            <p>Email: leonardnjoroge388@gmail.com</p>
+    <footer class="bg-light text-center text-lg-start mt-5">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Quick Links</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="index.html" class="text-dark">Home</a></li>
+                        <li><a href="about.html" class="text-dark">About Us</a></li>
+                        <li><a href="services.html" class="text-dark">Services</a></li>
+                        <li><a href="testimonials.html" class="text-dark">Testimonials</a></li>
+                        <li><a href="contact.html" class="text-dark">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Contact Info</h5>
+                    <p>Address: 217 Macaulay Street East, L8L 3X7 Hamilton, ON</p>
+                    <p>Phone: 
+                        <a href="tel:+14372590222">+1 437-259-0222</a>, 
+                        <a href="tel:+14373334699">+1 437-333-4699</a>, 
+                        <a href="tel:+14376639240">+1 437-663-9240</a>
+                    </p>
+                    <p>Email: <a href="mailto:leonardnjoroge388@gmail.com">leonardnjoroge388@gmail.com</a></p>
+                </div>
+            </div>
         </div>
-        <div class="social-media">
-            <a href="https://x.com" target="https://x.com/legacy_elegance?t=34bChjueW_MKet0zqcH7PA&s=08" rel="noopener noreferrer">X</a>
+        <div class="text-center p-3">
+            &copy; 2024 Legacy Elegance. All rights reserved.
         </div>
-        <div class="quick-links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="services.html">Services</a>
-            <a href="testimonials.html">Testimonials</a>
-            <a href="contact.html">Contact Us</a>
-        </div>
-        <p>&copy; 2024 Legacy Elegance. All rights reserved.</p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
