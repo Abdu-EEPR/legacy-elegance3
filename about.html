@@ -4,69 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Legacy Elegance</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Additional styles can be included here if needed */
         .logo img {
             max-width: 50%; /* Ensures the logo image is responsive */
-            height: 50%;
+            height: auto;
         }
         /* Responsive design adjustments */
         @media screen and (max-width: 600px) {
             .logo img {
                 width: 50%; /* Adjusts logo image size for smaller screens */
-                height: 50%;
+                height: auto;
             }
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="https://raw.githubusercontent.com/Abdu-EEPR/legacy-elegance3/main/LE_3.png" alt="Legacy Elegance Logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="testimonials.html">Testimonials</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="https://raw.githubusercontent.com/Abdu-EEPR/legacy-elegance3/main/LE_3.png" alt="Legacy Elegance Logo" class="d-inline-block align-top" style="max-width: 50%; height: auto;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
         <section class="about">
-            <h2>About Us</h2>
-            <img src="https://raw.githubusercontent.com/Abdu-EEPR/legacy-elegance3/main/LE_3.png" alt="About Us Image">
-            <p>Legacy Elegance was founded in 2024 by Leonard Njoroge with a vision to provide unparalleled cleaning services. Our mission is "Serve to Satisfy," and we are dedicated to making every space we clean immaculate and inviting. Our team of professional cleaners is committed to delivering high-quality services tailored to meet your specific needs.</p>
+            <div class="container">
+                <h2>About Us</h2>
+                <img src="https://raw.githubusercontent.com/Abdu-EEPR/legacy-elegance3/main/LE_3.png" alt="About Us Image" class="img-fluid">
+                <p>Legacy Elegance was founded in 2024 by Leonard Njoroge with a vision to provide unparalleled cleaning services. Our mission is "Serve to Satisfy," and we are dedicated to making every space we clean immaculate and inviting. Our team of professional cleaners is committed to delivering high-quality services tailored to meet your specific needs.</p>
+            </div>
         </section>
     </main>
-    <footer>
-        <div class="contact-info">
-            <address>
-                <p>Address: 217 Macaulay Street East, L8L 3X7 Hamilton, ON</p>
-                <p>Phone:
-                    <a href="tel:+14372590222">+1 437-259-0222</a>,
-                    <a href="tel:+14373334699">+1 437-333-4699</a>,
-                    <a href="tel:+14376639240">+1 437-663-9240</a>
-                </p>
-                <p>Email: <a href="mailto:leonardnjoroge388@gmail.com">leonardnjoroge388@gmail.com</a></p>
-            </address>
+    <footer class="bg-light text-center text-lg-start">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Contact Info</h5>
+                    <p>Address: 217 Macaulay Street East, L8L 3X7 Hamilton, ON</p>
+                    <p>Phone:
+                        <a href="tel:+14372590222">+1 437-259-0222</a>,
+                        <a href="tel:+14373334699">+1 437-333-4699</a>,
+                        <a href="tel:+14376639240">+1 437-663-9240</a>
+                    </p>
+                    <p>Email: <a href="mailto:leonardnjoroge388@gmail.com">leonardnjoroge388@gmail.com</a></p>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Follow Us</h5>
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a><br>
+                    <a href="https://x.com/legacy_elegance?t=34bChjueW_MKet0zqcH7PA&s=08" target="_blank" rel="noopener noreferrer">X</a><br>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Quick Links</h5>
+                    <a href="index.html">Home</a><br>
+                    <a href="about.html">About Us</a><br>
+                    <a href="services.html">Services</a><br>
+                    <a href="testimonials.html">Testimonials</a><br>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+            </div>
         </div>
-        <div class="social-media">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
-            <a href="https://x.com" target="https://x.com/legacy_elegance?t=34bChjueW_MKet0zqcH7PA&s=08" rel="noopener noreferrer">X</a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <div class="text-center p-3">
+            &copy; 2024 Legacy Elegance. All rights reserved.
         </div>
-        <div class="quick-links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="services.html">Services</a>
-            <a href="testimonials.html">Testimonials</a>
-            <a href="contact.html">Contact Us</a>
-        </div>
-        <p>&copy; 2024 Legacy Elegance. All rights reserved.</p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
